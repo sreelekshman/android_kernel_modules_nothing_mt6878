@@ -11614,7 +11614,8 @@ static int wlan_pm_notifier_callback(struct notifier_block
 		return NOTIFY_STOP;
 
 	if (kalIsHalted() || !prGlueInfo) {
-		goto out;
+                kalHaltUnlock();
+                return NOTIFY_STOP;
 	}
 
 	switch (event) {
