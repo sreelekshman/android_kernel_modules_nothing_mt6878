@@ -360,7 +360,7 @@
 #ifdef CFG_SUPPORT_WIFI_6G
 #undef CFG_SUPPORT_WIFI_6G
 #endif
-#define CFG_SUPPORT_WIFI_6G			0
+#define CFG_SUPPORT_WIFI_6G			1
 #endif
 
 /*------------------------------------------------------------------------------
