@@ -439,11 +439,9 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 #define BITMASK_ANY(f, m)     (((f) & (m)) != 0U)  /* any bit from the mask is set */
 
 #ifndef MAX
-#define MAX(a ,b)	(((a) > (b)) ? (a) : (b))
 #endif
 
 #ifndef MIN
-#define MIN(a, b)	(((a) < (b)) ? (a) : (b))
 #endif
 
 #ifndef CLAMP

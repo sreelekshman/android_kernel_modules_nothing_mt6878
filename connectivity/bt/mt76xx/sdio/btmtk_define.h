@@ -30,8 +30,10 @@
 	#define UNUSED(x) (void)(x)
 #endif
 
-#define MIN(a, b) (((a) < (b)) ? (a) : (b))
-#define MAX(a, b) (((a) > (b)) ? (a) : (b))
+#ifndef MIN
+#define BT_MIN(a, b) (((a) < (b)) ? (a) : (b))
+#ifndef MAX
+#define BT_MAX(a, b) (((a) > (b)) ? (a) : (b))
 
 /**
  * Log level definition
